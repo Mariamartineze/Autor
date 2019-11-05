@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Walter Benjamin</title>
+    <style type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --c:orange;
+            --altura:70vh;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-size: 16px;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            height: 70vh;
+            background: orange;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        header div{
+            position: relative;
+            width: 50%;
+            height: 60vh;
+        }
+        header div img{
+            object-fit: cover;
+            object-position: top center;
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            position: absolute;
+            text-align: center;
+            top: 61vh;
+            width: 100%;
+            height: 70vh;
+        }
+        article{
+            font-family: 'Jomolhari', serif;
+            width: 35.4em;
+            margin: auto;
+            
+        }
+        article>p:first-child{
+            color: orange;
+            column-count: 2;
+            column-gap: 30px;
+            text-align: justify;
+            hyphens: auto;
+            column-rule: 1px solid orange;
+            line-height: 1.4em;
+            padding: 8vw 0;
+        }
+        article #cos{
+            width: auto;
+            padding: 0 3em;
+            text-align: justify;
+            hyphens: auto;
+        }
+        article #cos>p:first-child::first-letter{
+            color: orange;
+            font-family: 'Georgia', sans-serif;
+            font-size: 5em;
+            float: left;
+            margin-right: 0.2em;
+            margin-top: -0.35em;
+            margin-bottom: -0.2em;
+            padding-bottom: 0.2em;
+            padding-right: 0.2em;
+        }
+        article #cos p{
+            padding: 0 0 1.5em 0;
+        }
+        .cercle, 
+        .hexagon{
+            background: pink;
+        }
+        .cercle, 
+        .cercle img{
+            border-radius: 50%;
+        }
+        .cercle{
+            max-width: 20em;
+            float: left;
+            margin-left: -8em;
+            shape-margin: 1em;
+            shape-outside: circle(50%)border-box;
+        }
+        .hexagon, 
+        .hexagon img{
+            clip-path: polygon(20% 0, 98% 16%, 76% 70%, 50% 100%, 8% 74%, 0 25%);
+        }
+        .hexagon{
+            max-width: 20em;
+            float: right;
+            margin-right: -8em;
+            shape-margin: 2em;
+            shape-outside: polygon(20% 0, 98% 16%, 76% 70%, 50% 100%, 8% 74%, 0 25%)border-box;
+        }
+        @media (max-width:600px){
+            body{
+                background-color: azure;
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bloc_esq">
+            <img src="img/uno.jpg" >
+        </div>
+        <div class="bloc_dre">
+            <img src="img/dos.jpg" >
+        </div>
+        <h1>Walter Benjamin, filósofo, crítico literario, traductor y ensayista alemán</h1>
+    </header>
+    <article>
+        <p>Walter Benjamin nació en el Berlín del Imperio Alemán (1871-1918), en el seno de una acomodada familia de origen ashkenazi, dedicada a los negocios y totalmente integrada. Su padre, Emil Benjamin, era banquero en París, pero se había trasladado a Alemania, donde trabajó como anticuario en Berlín; más tarde, se casó con Pauline Schönflies.</p>
+        <div id="cos">
+        <p>Walter Benjamin, en sus reflexiones, recuerda con ternura los cuentos que le contaba su madre, los cuales le sirvieron como base para una de sus teorías: «el poder de la narración y de la palabra sobre el cuerpo». Reflexionó sobre la relación que los cuentos establecían entre la tradición y la actualidad.En 1905, debido a su frágil salud, sus padres le enviaron a un internado en el medio rural, en Turingia. Dos años más tarde, en 1907, volvería a su escuela en Berlín.</p>
+        <div class="cercle">
+        <img src="img/walter1.jpg" alt="retrat">
+        </div>
+            <p>En 1912, a la edad de veinte años, ingresa en la Universidad de Friburgo (Alemania), pero al final del segundo semestre vuelve a Berlín y se matricula en la Universidad de Berlín para continuar sus estudios de Filosofía. Allí conoció el Sionismo, que sus padres, habiéndole ofrecido una educación liberal, no le habían inculcado. Benjamin no profesaba la religiosidad ortodoxa; tampoco abrazó el Sionismo político, sino que desarrolló un «Sionismo cultural» que valoraba la riqueza y la estética cultural del misticismo judío.</p>
+            <div class="hexagon">
+            <img src="img/walter2.jpg" alt="retrat">
+            </div>
+        <p>Benjamin defendió el Judaísmo como parte fundamental de la cultura de Europa. Para él, el pueblo judío era el más distinguido portador de lo espiritual en las culturas del mundo.</p>
+        </div>
+    </article>
+</body>
+</html>
